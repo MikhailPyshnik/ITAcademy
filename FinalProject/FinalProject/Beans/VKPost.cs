@@ -8,6 +8,8 @@ namespace FinalProject.Beans
 {
     public class VKPost
     {
+        
+        
         public string Text { get; set; }
         public string TimeDate { get; set; }
         public int LikesCount { get; set; }
