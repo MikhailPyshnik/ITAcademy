@@ -1,0 +1,41 @@
+﻿
+@using FinalProject.Beans;
+
+@{
+    ViewBag.Title = "SearchResults";
+}
+
+<h2>Search</h2>
+
+<div class="jumbotron">
+
+    <table border="1" align="center" width="100%" cellpadding="5">
+
+        <p><a href="http://localhost:57470/Home/Index" class="btn btn-primary btn-lg">Назад к выбору группы &raquo;</a></p>
+
+        <tr>
+            <th>Описание</th>
+        </tr>
+
+        @foreach (var b in ViewBag.VKposts)
+        {
+            <tr>
+                <th>
+                    <p>Время добавления поста: @b.TimeDate</p>
+                    <p>Коментарий к посту: @b.Text</p>
+                    @foreach (var c in b.ImageURLs)
+                    {
+
+                        <img src="@c" />
+                    }
+                    <p>Кол-во просмотров: @b.ViewsCount</p>
+                    <p>Кол-во лайков: @b.LikesCount</p>
+                    <p>Кол-во комментов: @b.ComentsCount</p>
+                </th>
+            </tr>
+        }
+    </table>
+    <br />
+    <p><a href="http://localhost:57470/Home/Index" class="btn btn-primary btn-lg">Назад к выбору группы &raquo;</a></p>
+</div>
+

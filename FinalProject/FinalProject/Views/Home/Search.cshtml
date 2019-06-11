@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search</h2>
+
+<div class="jumbotron">
+    <h3>Search Form</h3>
+    <form method="post" action="/Home/Search">
+        <table>
+            <tr>
+                <td>
+                    <p>Group Id: </p>
+                </td>
+                <td>
+                    <input type="text" name="GroupId" />  For  group Id, write -. Example: -165707217.
+                </td>
+            </tr>
+            <tr>
+                <td><p>Group Domain: </p></td>
+                <td>
+                    <input type="text" name="GroupDomain" />
+                </td>
+            </tr>
+            <tr>
+                <td><p>Size: </p></td>
+                <td>
+                    <input type="text" name="Size" /> Max output size-100 posts.
+                </td>
+            </tr>
+            <tr><td><input type="submit" value="Search" /><td></td></tr>
+        </table>
+    </form>
+</div>

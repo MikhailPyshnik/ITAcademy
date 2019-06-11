@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h3>Форма  получения токена VK</h3>
+    <form method="post" action="/Home/Index">
+         <table>
+            <tr>
+                <td><p>Введите логин: </p></td>
+                <td><input type="text" name="Login" /> (Phone number Vk).</td>
+            </tr>
+            <tr>
+                <td><p>Введите пароль: </p></td>
+                <td>
+                    <input type="text" name="Password" />
+                </td>
+            </tr>
+            <tr><td><input type="submit" value="Отправить" /><td></td></tr>
+        </table>
+    </form>
+</div>
